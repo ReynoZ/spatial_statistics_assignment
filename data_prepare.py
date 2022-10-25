@@ -29,20 +29,20 @@ out = pd.read_csv(r'F:\0_Timothy\spatial_statistics_assignment\GSLIBfiles'
                   usecols=([1,2]),sep='\s+')
 
 def set_xy(idx):
-    axs[idx].set_xlabel('Distance(m)')
+    axs[idx].set_xlabel('Distance h/m')
     axs[idx].set_ylabel(r'$\gamma(h)$')
     
 fig, axs = plt.subplots(1,2,figsize=(6,3),dpi=200,layout='constrained')
 plt.suptitle('Variogram of the 118 Z values at two lag spacings')
-axs[0].grid(linestyle='--')
-axs[1].grid(linestyle='--')
-axs[0].set_title('Lag space h = 2 m',fontsize=10)
-axs[1].set_title('Lag space h = 4 m',fontsize=10)
+
+for i in range(2):
+    axs[i].grid(linestyle='--')
+    axs[i].set_title(r'Lag $h$ = '+str((i+1)*2)+' m',fontsize=10)
+    set_xy(i)
+    axs[i].set_xticks(np.arange(0,22*(i+1),2*(i+1)))
+    axs[i].set_ylim(0,80)
+
 axs[0].plot(out.iloc[:num_of_lags,0],out.iloc[:num_of_lags,1],color='b')
 axs[1].plot(out.iloc[num_of_lags:,0],out.iloc[num_of_lags:,1],color='b')
-set_xy(0)
-set_xy(1)
-axs[0].set_xticks(np.arange(0,22,2))
-axs[1].set_xticks(np.arange(0,42,4))
 
 fig.savefig('Problem1.png')
