@@ -10,15 +10,15 @@ gamv_out9.txt                          	\file for variogram output
 10.0                               	\lag separation distance
 5                               	\lag tolerance
 9                                 	\number of directions
-90  45 10.00      0.0  45  10.00  	\azm,atol,bandh,dip,dtol,bandv
-70  45 10.00      0.0  45  10.00  	\azm,atol,bandh,dip,dtol,bandv
-50  45 10.00      0.0  45  10.00  	\azm,atol,bandh,dip,dtol,bandv
-30  45 10.00      0.0  45  10.00  	\azm,atol,bandh,dip,dtol,bandv
-10  45 10.00      0.0  45  10.00  	\azm,atol,bandh,dip,dtol,bandv
--10  45 10.00      0.0  45  10.00  	\azm,atol,bandh,dip,dtol,bandv
--30  45 10.00      0.0  45  10.00  	\azm,atol,bandh,dip,dtol,bandv
--50  45 10.00      0.0  45  10.00  	\azm,atol,bandh,dip,dtol,bandv
--70  45 10.00      0.0  45  10.00  	\azm,atol,bandh,dip,dtol,bandv
+90  45 20.00      0.0  45  20.00  	\azm,atol,bandh,dip,dtol,bandv
+70  45 20.00      0.0  45  20.00  	\azm,atol,bandh,dip,dtol,bandv
+50  45 20.00      0.0  45  20.00  	\azm,atol,bandh,dip,dtol,bandv
+30  45 20.00      0.0  45  20.00  	\azm,atol,bandh,dip,dtol,bandv
+10  45 20.00      0.0  45  20.00  	\azm,atol,bandh,dip,dtol,bandv
+-10  45 20.00      0.0  45  20.00  	\azm,atol,bandh,dip,dtol,bandv
+-30  45 20.00      0.0  45  20.00  	\azm,atol,bandh,dip,dtol,bandv
+-50  45 20.00      0.0  45  20.00  	\azm,atol,bandh,dip,dtol,bandv
+-70  45 20.00      0.0  45  20.00  	\azm,atol,bandh,dip,dtol,bandv
 0                                 	\standardize sills? (0=no, 1=yes)
 1                                 	\number of variograms
 1   1   1                         	\tail var., head var., variogram type

@@ -39,4 +39,5 @@ for i in range(2):
         axs[i,j].legend()
         axs[i,j].text(20,20000,'atol='+str(atol[count])+'°')
         count+=1
-    
+        
+fig.savefig('Problem2-4.png')
