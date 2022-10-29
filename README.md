@@ -1,4 +1,4 @@
-# spatial_statistics_assignment
+# Spatial Statistics Assignment
 The assignment is now completed.
 
 ## Data
